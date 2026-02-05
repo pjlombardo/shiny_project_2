@@ -25,7 +25,7 @@ The bullets below take the general form:
 
 > Shiny Component  |  **variable_name**  | (inputs required)  | optional: function used
 
-* tableOutput | **mydata** | (...) | None
+* tableOutput | **mydata** | (df, search_str, myvar) | display(table)
 
 ### Reactive components and Server
 
@@ -37,5 +37,6 @@ The bullets below take the general form:
 ### Functions and Set up
 
 > **get_choices**  |  (df)  | This gathers choices for the selectInput based on the uploaded data file.
+
 > **display_table** | (df, search_str, myvar) | This walks through the logic of which dataframe to show based on whether a file was uploaded and whether we entered a search string.
 
