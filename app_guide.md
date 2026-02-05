@@ -31,9 +31,9 @@ The bullets below take the general form:
 
 > component type | **variable_name(s)** | Events that trigger 
 
-* fill in...
+* reactiveValues | **df** | input$myfile
 
 
 ### Functions and Set up
 
-> **function_name**  |  (inputs)  | purpose
+> **get_choices**  |  (df)  | This gathers choices for the selectInput based on the uploaded data file.

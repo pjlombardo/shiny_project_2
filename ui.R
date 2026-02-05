@@ -13,8 +13,7 @@ ui <- fluidPage(
            fileInput("myfile","Please upload a tab-separated file."),
            selectInput("myvar",
                        "Please select a variable on which to filter:",
-                       choices = list("Choice 1" = "choice1",
-                                      "Choice 2" = "choice2")),
+                       choices = list("Please upload a file" = " ")),
            textInput("search_str",
                      "Enter a string by which to filter the data:",
                      placeholder = "...")
