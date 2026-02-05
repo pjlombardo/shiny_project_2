@@ -11,5 +11,20 @@ get_choices<-function(df){
   return(var_choices)
 }
 
+display_table<-function(df, search_str, myvar ){
+  if (is.null(df)){
+    df
+  } else {
+    if (search_str == ""){
+      df
+    } else {
+      df %>%
+        filter(
+          grepl(search_str, get(myvar))
+        ) 
+    }
+  }
+}
+
 
 

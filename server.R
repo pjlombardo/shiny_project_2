@@ -29,8 +29,11 @@ server <- function(input, output, session){
   })
   
   output$mydata <- renderTable(
-    df$data,
-    bordered =TRUE
+    # we have two inputs: input$myvar selects the variable
+    # input$search_str which gives us the character.
+    display_table(df$data, input$search_str, input$myvar),
+    bordered =TRUE,
+    hover = TRUE
   )
   
 }
