@@ -10,5 +10,9 @@ source('functions.R')
 server <- function(input, output){
   # you will put your interactions here
   
+  output$mydata <- renderTable(
+    iris,
+    bordered =TRUE
+  )
   
 }
